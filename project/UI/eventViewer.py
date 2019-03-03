@@ -98,4 +98,4 @@ class Event(tk.Frame):
             widget.bindtags(tuple(bindtags))
 
     def show_event(self, event):
-        pop = EventPopup(self.parent, self.event)
+        EventPopup(self.parent, self.event)
