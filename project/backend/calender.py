@@ -3,7 +3,6 @@ import tkinter as tk
 from DBHandler import DBHandler
 from pages.addeventpage import AddEventPage
 from pages.calendarpage import CalendarPage
-from pages.loginpage import LoginPage
 
 
 class Application(tk.Tk):
@@ -40,9 +39,7 @@ class Application(tk.Tk):
 
         self.pages[CalendarPage] = CalendarPage(self)
 
-        self.pages[LoginPage] = LoginPage(self)
-
-        self.change_page(LoginPage)
+        self.change_page(CalendarPage)
 
     def change_page(self, new_page):
         """
